@@ -14,6 +14,7 @@ require('./config/passport');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const quotesRouter = require('./routes/quotes');
+const munderDifflinRouter = require('./routes/munderDifflin');
 
 
 var app = express();
@@ -32,6 +33,12 @@ app.use(session({
   resave: false,
   saveUninitialized: true
 }));
+app.use(passport.initialize());
+app.use(passport.session());
+app.use(function (req, res, next) {
+  res.locals.user = req.user;
+  next();
+});
 
 // app.get('/quotes', async function (req,res) {
 //   const apiResponse = await fetch('https://oqaas.vercel.app/api/q')
@@ -57,45 +64,19 @@ app.use(session({
 //     console.error('Error fetching data from the API:', error);
 //   });
 
-app.get('/munderDifflin/quotes', async (req, res) => {
-  try {
-    const response = await fetch('https://oqaas.vercel.app/api/a');
-    const data = await response.json();
-
-    if (Array.isArray(data)) {
-      const quotes = data.map((item) => ({
-        name: item.name,
-        quote: item.quote,
-      }));
-      
-      res.render('munderDifflin/quotes', { quotes });
-    } else {
-      console.error('Invalid or missing data in the API response.');
-      res.status(500).send('Error: Invalid or missing data in the API response.');
-    }
-  } catch (error) {
-    console.error('Error fetching data from the API:', error);
-    res.status(500).send('Error: Unable to fetch data from the API.');
-  }
-});
-
-
-
-
-
-
-
-
-
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/quotes', quotesRouter);
-app.use(passport.initialize());
-app.use(passport.session());
-app.use(function (req, res, next) {
-  res.locals.user = req.user;
-  next();
-});
+app.use('/munderdifflin', munderDifflinRouter)
+
+
+
+
+
+
+
+
+
 
 
 // catch 404 and forward to error handler
