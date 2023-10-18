@@ -9,13 +9,12 @@
     </tr>
   </thead>
   <tbody>
-    <!-- Write the line of EJS to iterate over movies using forEach -->
-    <% quotes.forEach(function(q) { %>
+    <% quotes.forEach(function(quote) { %>
       <tr>
-        <td><%= q.name %></td>
-        <td><%= q.quote %></td>
+        <td><%= quote.name %></td>
+        <td><%= quote.quote %></td>
+        <td><a href="/quotes/<%= quote._id %>/edit">Edit</a></td>
       </tr>
-    <!-- Close the forEach using EJS here -->
     <% }); %>
   </tbody>
 </table>

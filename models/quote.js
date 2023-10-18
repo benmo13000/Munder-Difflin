@@ -10,6 +10,11 @@ const quoteSchema = new Schema({
         type: String,
         required: true,
     },
+    user: {
+        type: Schema.Types.ObjectId,
+        ref: 'User',
+        required: true,
+    }
 });
 
 const Quote = mongoose.model('Quote', quoteSchema);
