@@ -19,7 +19,7 @@ router.get('/add', (req, res) => {
   res.render('quotes/add');
 });
 
-router.post('/add', async (req, res) => {
+router.post('/', async (req, res) => {
   // Save a new quote to the database
   try {
     const { name, quote } = req.body;

@@ -8,7 +8,6 @@ var passport = require('passport');
 require('dotenv').config();
 
 require('./config/database');
-// new code below
 require('./config/passport');
 
 var indexRouter = require('./routes/index');

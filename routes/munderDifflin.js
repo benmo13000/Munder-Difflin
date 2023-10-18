@@ -13,7 +13,7 @@ router.get('/quotes', async (req, res) => {
           quote: item.quote,
         }));
         
-        res.render('/munderDifflin/quotes', { quotes });
+        res.render('munderDifflin/quotes', { quotes });
       } else {
         console.error('Invalid or missing data in the API response.');
         res.status(500).send('Error: Invalid or missing data in the API response.');

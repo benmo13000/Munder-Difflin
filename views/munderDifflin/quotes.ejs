@@ -10,8 +10,17 @@
             <li>
                 <strong><%= quote.name %>:</strong>
                 <%= quote.quote %>
+                <button id="favorite"></button>
             </li>
+                <form method="POST" action="/quotes">
+                    <input type="hidden" name="name" value="<%= quote.name %>">
+                    <input type="hidden" name="quote" value="<%= quote.quote %>">
+                    <button type="submit">SAVE</button>
+                </form>
         <% }); %>
     </ul>
 </body>
 </html>
+
+
+

@@ -6,7 +6,7 @@ const quoteSchema = new Schema({
         type: String,
         required: true,
     },
-    actor: {
+    name: {
         type: String,
         required: true,
     },
