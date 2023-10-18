@@ -4,7 +4,11 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  // console.log(req.user);
+  res.render('index', { 
+    title: 'Express',
+    user: req.user});
+
 });
 
 // Google OAuth login route
@@ -23,15 +27,15 @@ router.get('/auth/google', passport.authenticate(
 router.get('/oauth2callback', passport.authenticate(
   'google',
   {
-    successRedirect: '/home',
-    failureRedirect: '/home'
+    successRedirect: '/',
+    failureRedirect: '/'
   }
 ));
 
 // OAuth logout route
 router.get('/logout', function(req, res){
   req.logout(function() {
-    res.redirect('/movies');
+    res.redirect('/');
   });
 });
 

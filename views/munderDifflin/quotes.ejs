@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quotes</title>
+</head>
+<body>
+    <h1>Quotes</h1>
+    <ul>
+        <% quotes.forEach((quote, index) => { %>
+            <li>
+                <strong><%= quote.name %>:</strong>
+                <%= quote.quote %>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>
