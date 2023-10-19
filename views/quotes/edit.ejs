@@ -1,7 +1,6 @@
 <%- include('../partials/header') %>
 
-<form action="/quotes/<%= quote._id %>/edit" method="POST">
-    <input type="hidden" name="_method" value="PUT">
+<form action="/quotes/<%= quote._id %>/edit?_method=PUT" method="POST">
     <label for="name">Name:</label>
     <input type="text" name="name" value="<%= quote.name %>" required>
     <br>
