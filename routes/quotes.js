@@ -34,6 +34,7 @@ router.get('/', async (req, res) => {
   } catch (error) {
     console.error('Error fetching quotes:', error);
     res.status(500).send('Error: Unable to fetch quotes, please Log In.');
+    
   }
 });
 

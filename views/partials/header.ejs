@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-<nav>
-  <a href="/munderDifflin/quotes">View All Quotes!!</a> 
-  <a href="/quotes">My Quotes</a>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+
+
+
+<div class="container">
+  <p class="white-text" class="inline-box">MUNDER&nbsp; DIFFLIN, </p>&nbsp;
+  <p class="grey-text" class="inline-box">INC</p>
+</div>
+
+
+
+
+
+
+
+
+<nav class="inline-links">
+  <a href="/">Home Page</a>&nbsp;
+  <a href="/munderDifflin/quotes">View All Quotes!!</a>&nbsp;
+  <a href="/quotes">My Quotes</a>&nbsp;
   <% if (user) { %>
-  <a href="/logout">LOG OUT</a>
+    <a href="/logout">LOG OUT</a>&nbsp;
   <% } else { %>
-    <a href="/auth/google" class="login">LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
-    <% } %>
+    <a href="/auth/google" class="login">LOG IN</a>&nbsp;
+  <% } %>
 
 </nav>
+
+</head>

@@ -1,20 +1,109 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+
+/* body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: green,
-}
+} */
 
 a {
-  color: red;
+  color: white;
 }
 
-.login {
+/* .login {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 34px;
+} */
+
+/* .login img {
+  height: 30px;
+} */
+
+p {
+  font: 50px "Anton";
 }
 
-.login img {
-  height: 30px;
+.white-text {
+  color: white;
+  position: relative;
+  top: -50px;
 }
+
+.grey-text {
+  color: grey;
+  position: relative;
+  top: -50px;
+}
+.container {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.inline-box {
+  display: inline;
+  margin: 10px;
+}
+
+.inline-links{
+  display: inline;
+  margin-right: 10px;
+  position: relative;
+  top: -20.5px;
+  left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center; 
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%; 
+}
+
+
+/*use vh pwease */
+
+/* @media (max-width: 1000px) {
+  body {
+    font-size: 16px; 
+    background-color: red
+  }
+  .container {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .banner {
+    width: 100%; 
+  }
+} */
+
+/* p{
+  position: relative;
+  top: 0;
+  display: inline;
+  display: flex;
+  justify-content: center;
+  font: 50px "Anton";
+  color: pink;
+} */
+
