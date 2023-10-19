@@ -15,7 +15,7 @@
         <td><%= quote.quote %></td>
         <td><a href="/quotes/<%= quote._id %>/edit">Edit</a></td>
         <td>
-          <form action="/quotes/<%= quote._id %>/edit?_method=DELETE%>" method="POST">
+          <form action="/quotes/<%= quote._id %>?_method=DELETE%>" method="POST">
             <input type="hidden" name="_method" value="DELETE">
             <button type="submit">Delete</button>
           </form>
