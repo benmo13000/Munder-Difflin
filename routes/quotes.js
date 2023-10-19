@@ -2,9 +2,10 @@ const express = require('express');
 const router = express.Router();
 const Quote = require('../models/quote');
 
+
 router.get('/:id/edit', async (req, res) => {
     try {
-      const quote = await Quote.findById(req.params.id);
+        const quote = await Quote.findById(req.params.id);
       res.render('quotes/edit', { quote });
     } catch (error) {
       console.error('Error fetching quote for editing:', error);
@@ -56,5 +57,15 @@ router.post('/', async (req, res) => {
 });
 
 // Add more routes for updating and deleting quotes as needed
+router.delete('/:id', async (req, res) => {
+    try {
+      const quoteId = req.params.id;
+      await Quote.findByIdAndRemove(quoteId);
+      res.redirect('/quotes');
+    } catch (error) {
+      console.error('Error deleting the quote:', error);
+      res.status(500).send('Error: Unable to delete the quote.');
+    }
+  });
 
 module.exports = router;
