@@ -13,11 +13,11 @@
       <tr>
         <td><%= quote.name %></td>
         <td><%= quote.quote %></td>
-        <td><a href="/quotes/<%= quote._id %>/edit">Edit</a></td>
+        <td><a href="/quotes/<%= quote._id %>/edit" class="edit">Edit</a></td>
         <td>
           <form action="/quotes/<%= quote._id %>?_method=DELETE%>" method="POST">
             <input type="hidden" name="_method" value="DELETE">
-            <button type="submit">Delete</button>
+            <button type="submit" class="delete">Delete</button>
           </form>
         </td>
       </tr>

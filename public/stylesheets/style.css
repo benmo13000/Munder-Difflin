@@ -1,47 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 
-
-/* body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-} */
-
 a {
   color: white;
 }
 
-/* .login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 34px;
-} */
-
-/* .login img {
-  height: 30px;
-} */
 
 p {
-  font: 50px "Anton";
+  font-size: 15px;
 }
+
 
 .white-text {
   color: white;
   position: relative;
-  top: -50px;
+  top: -45px;
+  font: 50px "Anton"
 }
 
 .grey-text {
   color: grey;
   position: relative;
-  top: -50px;
+  top: -45px;
+  font: 50px "Anton"
 }
 .container {
   background-color: black;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  margin: -2vh;
 }
 
 .inline-box {
@@ -55,17 +43,9 @@ p {
   position: relative;
   top: -20.5px;
   left: 10px;
+  display: flex;
+  justify-content: center;
 }
-
-
-
-
-
-
-
-
-
-
 
 .footer {
   background-color: black;
@@ -77,33 +57,121 @@ p {
   width: 100%; 
 }
 
+.allquotesbody {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5; 
+  margin: 0;
+  padding: center;
+  text-align: center;
+}
 
-/*use vh pwease */
+h1 {
+  background-color: #333; 
+  color: white;
+  padding: 20px;
+  margin: 0;
+}
 
-/* @media (max-width: 1000px) {
-  body {
-    font-size: 16px; 
-    background-color: red
-  }
-  .container {
-    background-color: red;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
+ul {
+  list-style: none;
+  padding: 0;
+}
 
-  .banner {
-    width: 100%; 
-  }
-} */
+li {
+  border: 1px solid #ccc;
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  width: 50%;
 
-/* p{
-  position: relative;
-  top: 0;
-  display: inline;
+}
+
+strong {
+  color: #333; 
+}
+button[type="submit"] {
+  text-decoration: underline;
+}
+.edit,
+button[type="submit"] {
+  background-color: black; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: -20px;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(216, 211, 211); 
+  color: black;
+}
+
+.footer {
+  background-color: #333;
+  color: white; 
+  padding: 10px;
+}
+.welcome{
   display: flex;
-  justify-content: center;
-  font: 50px "Anton";
-  color: pink;
-} */
+justify-content: center;
+}
+.pgraph {
+display: flex;
+justify-content: center;
+}
 
+
+h2 {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+td {
+  padding: 10px;
+}
+
+a.edit,
+button.delete {
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+a.edit:hover,
+button.delete:hover {
+  background-color: white;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}

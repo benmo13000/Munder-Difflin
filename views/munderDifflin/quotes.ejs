@@ -5,14 +5,14 @@
 <head>
     <title>Quotes</title>
 </head>
-<body>
+<body class="allquotesbody">
     <h1>Quotes</h1>
     <ul>
         <% quotes.forEach((quote, index) => { %>
             <li>
                 <strong><%= quote.name %>:</strong>
                 <%= quote.quote %>
-                <button id="favorite"></button>
+                
             </li>
                 <form method="POST" action="/quotes">
                     <input type="hidden" name="name" value="<%= quote.name %>">
