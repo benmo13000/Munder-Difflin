@@ -41,29 +41,6 @@ app.use(function (req, res, next) {
   next();
 });
 
-// app.get('/quotes', async function (req,res) {
-//   const apiResponse = await fetch('https://oqaas.vercel.app/api/q')
-//   // const apiResponse = await fetch('https://oqaas.vercel.app/api/a')
-//   console.log(apiResponse);
-//   const quote = apiResponse
-//   res.render('/quotes', {quote})
-// });
-
-// fetch('https://oqaas.vercel.app/api/q')
-//   .then((response) => response.json())
-//   .then((data) => {
-//     if (data && data.name && data.quote) {
-//       const name = data.name;
-//       const quote = data.quote;
-//       console.log(`Name: ${name}`);
-//       console.log(`Quote: ${quote}`);
-//     } else {
-//       console.error('Invalid or missing data in the API response.');
-//     }
-//   })
-//   .catch((error) => {
-//     console.error('Error fetching data from the API:', error);
-//   });
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
