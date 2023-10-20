@@ -25,9 +25,7 @@ router.get('/:id/edit', async (req, res) => {
     }
   });
 
-// Define routes related to quotes
 router.get('/', async (req, res) => {
-  // Retrieve quotes from the database and render a view
   try {
     const quotes = await Quote.find({user: req.user._id});
     res.render('quotes/index', { quotes });
@@ -39,12 +37,10 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/add', (req, res) => {
-  // Display a form to add a new quote
   res.render('quotes/add');
 });
 
 router.post('/', async (req, res) => {
-  // Save a new quote to the database
   try {
     const { name, quote } = req.body;
     const user = req.user._id;
@@ -57,7 +53,6 @@ router.post('/', async (req, res) => {
   }
 });
 
-// Add more routes for updating and deleting quotes as needed
 router.delete('/:id', async (req, res) => {
     try {
       const quoteId = req.params.id;

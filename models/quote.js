@@ -20,5 +20,3 @@ const quoteSchema = new Schema({
 const Quote = mongoose.model('Quote', quoteSchema);
 module.exports = Quote;
 
-
-//content in schema and the person who said it
