@@ -1,5 +1,18 @@
 # Munder Difflin
 
+![HTML Badge](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)
+![CSS Badge](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript Badge](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![GitHub Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+![Git Badge](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
+![VSCode Badge](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)
+![Node.js Version](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![Passport.js](https://img.shields.io/badge/Passport.js-v1.0-blue)
+
+
+
 Munder Difflin is a web application that lets you discover and save your favorite quotes. Inspired by the hit TV show "The Office," this website provides a platform for users to browse memorable quotes from the show and save them to their personal accounts.
 
 ## Features
@@ -12,8 +25,11 @@ Munder Difflin is a web application that lets you discover and save your favorit
 
 ## Getting Started
 
-All you have to do to get started is to CLICK HERE
+All you have to do to play the game is to [CLICK HERE](https://munder-difflin-1c754b52c7e7.herokuapp.com/)
 
+## Screenshots
+![Alt text](image.png)
+![ss](image-1.png)
 ## Usage
 
 1. Create an account or log in if you already have one.
@@ -24,19 +40,15 @@ All you have to do to get started is to CLICK HERE
 
 4. View your saved quotes in your profile.
 
-## Technologies Used
-
-- Node.js
-- Express.js
-- MongoDB
-- HTML/CSS
-- JavaScript
-- Passport.js (for authentication)
-
 ## Contributing
 
-Contributions are welcome! Please follow our [contributing guidelines](CONTRIBUTING.md) to get started.
+If you'd like to contribute to this project, please follow these steps:
 
+1. Fork the repository.
+2. Create a new branch for your feature (`git checkout -b feature-name`).
+3. Commit your changes (`git commit -m 'Add feature'`).
+4. Push to the branch (`git push origin feature-name`).
+5. Open a Pull Request.
 
 ## Contact
 
