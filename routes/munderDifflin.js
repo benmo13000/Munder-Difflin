@@ -2,6 +2,8 @@ const express = require('express');
 const router = express.Router();
 // const destinationsCtrl = require('../controllers/destinations');
 
+
+//display
 router.get('/quotes', async (req, res) => {
     try {
       const response = await fetch('https://oqaas.vercel.app/api/a');

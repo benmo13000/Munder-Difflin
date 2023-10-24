@@ -12,7 +12,6 @@ require('./config/database');
 require('./config/passport');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 const quotesRouter = require('./routes/quotes');
 const munderDifflinRouter = require('./routes/munderDifflin');
 
@@ -43,7 +42,6 @@ app.use(function (req, res, next) {
 
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 app.use('/quotes', quotesRouter);
 app.use('/munderdifflin', munderDifflinRouter)
 
